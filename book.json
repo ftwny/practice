@@ -1,0 +1,21 @@
+{
+    "Book":
+    [
+        {
+            "name":"Book 1",
+            "title":"The Great Gatsby",
+            "author":"F.Scott Fitzgerald",
+            "publish Year":1925,
+            "genre":["Fiction","Classics"]
+        },
+        {    
+        
+            "name":"Book 2",
+            "title":"To Kill a Mockingbird",
+            "author":"Harper Lee",
+            "publish Year":1960,
+            "genre":["Fiction","Coming-of-Age"]
+
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Book Details</title>
+</head>
+<body>
+    <h1>Check the Console for Book Details</h1>
+
+    <script>
+        // Fetch the JSON file
+        fetch('book.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // (a) The title of the first book
+                console.log("The title of the first book:", data.Book[0].title);
+
+                // (b) The author of the second book
+                console.log("The author of the second book:", data.Book[1].author);
+
+                // (c) The genres of all books
+                console.log("Genres of all books:");
+                data.Book.forEach((book, index) => {
+                    console.log(`Book ${index + 1}: ${book.genre.join(", ")}`);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching the JSON file:', error);
+            });
+    </script>
+</body>
+</html>
