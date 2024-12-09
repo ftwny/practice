@@ -1,0 +1,138 @@
+/* Universal reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Full height for the body and center alignment */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #E91663, #424FF5); /* Gradient background */
+}
+
+/* Container styles to center content */
+.container {
+    background: #fff;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; /* Limit the width of the form */
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+}
+
+/* Label and input styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Role select field specific style */
+select {
+    padding: 15px; /* Extra padding to make it bigger */
+    font-size: 18px; /* Bigger text inside the select box */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #424FF5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #333;
+}
+
+
+/* Logout button container */
+.logout-container {
+    margin-bottom: 20px; /* Space between logout button and table */
+}
+
+/* Logout button styles */
+.logout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E91663; /* Pink color */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #333; /* Darken on hover */
+}
+
+/* styling the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid rgb(12, 12, 12);
+}
+
+th {
+    background-color: #424FF5;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Link styling for registration */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a {
+    color: #424FF5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
